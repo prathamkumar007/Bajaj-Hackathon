@@ -121,7 +121,7 @@ app.post("/bfhl", async (req, res) => {
 
             try {
                 const response = await axios.post(
-                    "https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent",
+                    "https://generativelanguage.googleapis.com/v1/models/gemini-2.5-flash:generateContent",
                     {
                         contents: [
                             {
