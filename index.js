@@ -111,7 +111,7 @@ app.post("/bfhl", async (req, res) => {
                 }
                 return gcd(acc, curr);
             });
-        } else if (key === "AI") {
+        } else if (key.toLowerCase() === "ai") {
             if (typeof value !== "string" || value.trim().length === 0) {
                 return res.status(400).json({
                     is_success: false,
