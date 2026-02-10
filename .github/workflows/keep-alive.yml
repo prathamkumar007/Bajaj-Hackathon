@@ -1,0 +1,15 @@
+name: Render Keep Alive
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Ping Render App
+        run: |
+          curl -f https://bajaj-hackathon-2ugg.onrender.com/health
